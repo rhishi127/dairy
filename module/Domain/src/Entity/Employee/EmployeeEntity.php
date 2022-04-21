@@ -50,6 +50,11 @@ class EmployeeEntity extends DefaultEntity
      * @var int|null
      */
     protected $user_type_id;
+
+    /**
+     * @var string|null
+     */
+    protected $user_type;
     
     /**
      * @var int|null
@@ -192,4 +197,17 @@ class EmployeeEntity extends DefaultEntity
     public function setCreatedBy(?int $created_by): void {
         $this->created_by = $created_by;
     }
+
+    public function getUserType(): ?string
+    {
+        return $this->user_type;
+    }
+
+    public function setUserType(?string $user_type): void
+    {
+        $this->user_type = $user_type;
+    }
+
+
+
 }

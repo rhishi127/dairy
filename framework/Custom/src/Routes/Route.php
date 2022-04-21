@@ -26,6 +26,7 @@ class Route
     {
         $uriGetParam = isset($_GET['uri']) ? '/'.($_GET['uri']) : '/' ;
         foreach (self::$urls as $key => $value) {
+
             if (preg_match("#^$value$#", $uriGetParam)) {
                 $methodArray = self::$methods[$key];
                 $userMethod = $methodArray['factory'];

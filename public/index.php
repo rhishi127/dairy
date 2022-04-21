@@ -18,8 +18,6 @@ try {
         echo $e->getMessage();
         exit();
     }
-
     ApplicationMain::init($appConfig);
-
 ?>
 

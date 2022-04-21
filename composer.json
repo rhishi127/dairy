@@ -3,14 +3,8 @@
         "php": "^7.2",
         "robmorgan/phinx": "0.12.1",
         "symfony/yaml": "^5.0",
-        "tecnick.com/tcpdf": "^6.3",
-        "dompdf/dompdf": "^0.8.5",
         "phpstan/phpstan": "~0.12.86",
-        "aws/aws-sdk-php": "^3.185",
-        "phpoffice/phpword": "v0.18.*",
         "guzzlehttp/guzzle": "^6.2",
-        "ncjoes/office-converter": "^1.0",
-        "convertapi/convertapi-php": "^1.5",
         "mnvx/lowrapper": "^1.0"
     },
     "autoload": {
@@ -21,8 +15,7 @@
             "Utility\\" : "module/Utility/src",
             "Event\\" : "module/Event/src",
             "Core\\" : "module/Core/src",
-            "Test\\" : "module/Test/src",
-            "Student\\" : "module/Student/src",
+            "Health\\" : "module/Health/src",
             "Employee\\" : "module/Employee/src"
         }
     },

@@ -26,17 +26,17 @@ class EmployeeCommandMapper extends DefaultMapper
         array $test
     ):InsertIdResultEntity {
         $insertIdEntity = new InsertIdResultEntity();
-        /*$firstName = ''; 
-        $lastName = ''; 
-        $email = ''; 
-        $mobileNumber = ''; 
-        $password = ''; 
-        $branchId = '';   
-        $userTypeId = ''; 
-        $userToken = ''; 
-        $createdBy = '';*/
-        $camelCaseArray = $this->convertKeysToCamelCase($test);
-        extract($camelCaseArray);
+        $firstName = '';
+        $lastName = '';
+        $email = '';
+        $mobileNumber = '';
+        $password = '';
+        $branchId = '';
+        $userTypeId = '';
+        $userToken = '';
+        $createdBy = '';
+        extract($test);
+        var_dump($lastName);die;
         try {
             $sql = "CALL uspAddEmployee("
                         . ":first_name,"

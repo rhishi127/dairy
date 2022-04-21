@@ -7,6 +7,7 @@ use Core\Domain\Repository\Employee\IEmployeeRepository;
 use Core\Employee\Service\IEmployeeService;
 use Domain\Dto\AllRecordsResultDto;
 use Domain\Dto\RecordResultDto;
+use Domain\Entity\Employee\LoginEntity;
 use Domain\Entity\ResultEntity;
 use Domain\Entity\Employee\EmployeeEntity;
 use Custom\Utility\Token\SaltGenerator;
@@ -37,6 +38,11 @@ class EmployeeService implements IEmployeeService
         }
         
         //return $insertResult;
+    }
+
+    public function login(LoginEntity $loginEntity)
+    {
+        return $this->employee_repository->login($loginEntity);
     }
 
     /*public function getAllEmployees()
